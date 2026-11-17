@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="The Flywheel loop: contributors formalize, the shared library grows, tooling and automation improve, and formalization gets cheaper, drawing in more contributors.">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0f6e63"/></marker>
+  </defs>
+  <rect width="800" height="450" fill="#ffffff"/>
+  <circle cx="400" cy="225" r="150" fill="none" stroke="#ecebe5" stroke-width="28"/>
+  <g fill="none" stroke="#0f6e63" stroke-width="2.5" marker-end="url(#ah)">
+    <path d="M515 82 Q 655 92 668 186"/>
+    <path d="M668 264 Q 655 358 515 368"/>
+    <path d="M285 368 Q 145 358 132 264"/>
+    <path d="M132 186 Q 145 92 285 82"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="218" font-size="30" font-weight="700" fill="#15161a">Flywheel</text>
+    <text x="400" y="246" font-size="15" fill="#62666f">one library for CS in Lean</text>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <rect x="290" y="48" width="220" height="64" rx="12" fill="#fffefb" stroke="#c9c6bb"/>
+    <text x="400" y="76" font-size="17" font-weight="700" fill="#15161a">Formalize</text>
+    <text x="400" y="97" font-size="13" fill="#62666f">projects &amp; contributors</text>
+    <rect x="560" y="193" width="220" height="64" rx="12" fill="#e7f0ee" stroke="#0f6e63"/>
+    <text x="670" y="221" font-size="17" font-weight="700" fill="#15161a">Unify</text>
+    <text x="670" y="242" font-size="13" fill="#62666f">one shared library</text>
+    <rect x="290" y="338" width="220" height="64" rx="12" fill="#fffefb" stroke="#c9c6bb"/>
+    <text x="400" y="366" font-size="17" font-weight="700" fill="#15161a">Accelerate</text>
+    <text x="400" y="387" font-size="13" fill="#62666f">tooling, automation, data</text>
+    <rect x="20" y="193" width="220" height="64" rx="12" fill="#fffefb" stroke="#c9c6bb"/>
+    <text x="130" y="221" font-size="17" font-weight="700" fill="#15161a">Grow</text>
+    <text x="130" y="242" font-size="13" fill="#62666f">cheaper to contribute</text>
+  </g>
+</svg>

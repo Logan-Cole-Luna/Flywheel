@@ -4,18 +4,14 @@
   <!-- Analytics (optional): paste your own tag here. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Name: Paper Title Goes Here</title>
-  <meta name="description" content="One- or two-sentence summary of the project.">
-  <meta name="author" content="First Author">
-  <meta property="og:type" content="article">
-  <!-- <meta name="citation_arxiv_id" content="XXXX.XXXXX"> -->
-  <meta property="og:title" content="Project Name: Paper Title Goes Here">
-  <meta property="og:description" content="One- or two-sentence summary of the project.">
-  <meta property="og:image" content="https://example.github.io/project/static/placeholder.svg">
-  <meta property="og:url" content="https://example.github.io/project/">
+  <title>Flywheel: AI Tooling for Formalizing Computer Science in Lean</title>
+  <meta name="description" content="Flywheel builds open AI-for-math tooling for Lean, and uses it to grow one unified, formally verified library of computer science.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Flywheel: AI Tooling for Formalizing Computer Science in Lean">
+  <meta property="og:description" content="Flywheel builds open AI-for-math tooling for Lean, and uses it to grow one unified, formally verified library of computer science.">
+  <meta property="og:image" content="https://example.github.io/flywheel/static/flywheel.svg"><!-- TBD: real URL -->
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://example.github.io/project/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -24,293 +20,79 @@
 </head>
 <body>
 
-<!-- Sticky top nav: one link per section id. -->
-<nav class="nav" id="nav" aria-label="Sections">
+<!-- Shared header: generated, keep identical across pages. -->
+<div class="site-header">
   <div class="wide">
-    <a class="mark" href="#top"><img src="static/favicon.svg" alt="" width="20" height="20">Project</a>
-    <span class="links">
-      <a href="#overview">Overview</a><a href="#method">Method</a><a href="#walkthrough">Walkthrough</a><a href="#results">Results</a><a href="#chart">Chart</a><a href="#bibtex">Cite</a>
-    </span>
+    <a class="mark" href="index.html"><img src="static/favicon.svg" alt="" width="24" height="24">Flywheel</a>
+    <nav class="site-nav" aria-label="Site"><a href="about.html">About</a><a href="contributing.html">Get Involved</a><a href="roadmap.html">Roadmap</a><a href="governance.html">Governance</a><a href="partners.html">Partners</a><a href="resources.html">News &amp; Resources</a><a class="gh" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></nav>
   </div>
-  <span class="progress" aria-hidden="true"></span>
-</nav>
+</div>
 
-<!-- Side rail (wide screens): mirrors the nav. -->
-<aside class="rail" id="rail" aria-label="Page sections">
-  <span class="rail-marker" aria-hidden="true"></span>
-  <a href="#overview"><span class="rn">01</span><span class="rl">Overview</span></a>
-  <a href="#method"><span class="rn">02</span><span class="rl">Method</span></a>
-  <a href="#walkthrough"><span class="rn">03</span><span class="rl">Walkthrough</span></a>
-  <a href="#results"><span class="rn">04</span><span class="rl">Results</span></a>
-  <a href="#chart"><span class="rn">05</span><span class="rl">Chart</span></a>
-  <a href="#bibtex"><span class="rn">06</span><span class="rl">Cite</span></a>
-</aside>
-
-<!-- ============ HERO ============ -->
-<header id="top">
+<header class="hero">
   <div class="wide">
-    <div class="venue">Preprint &middot; 2026 &middot; <a href="#" target="_blank" rel="noopener">arXiv:XXXX.XXXXX</a></div>
-    <h1><span class="brand">Project</span>: Paper Title Goes Here</h1>
-
-    <p class="authors">
-      <span><a href="#">First Author</a><sup>1</sup></span>
-      <span><a href="#">Second Author</a><sup>1,&dagger;</sup></span>
-      <span><a href="#">Third Author</a><sup>2,&dagger;</sup></span>
-      <span>Fourth Author<sup>2</sup></span>
-    </p>
-    <p class="affils">
-      <span><sup>1</sup>Institution One</span><span><sup>2</sup>Institution Two</span>
-    </p>
-    <!-- Optional affiliation logos (put SVGs in static/logos/):
-    <div class="logos" role="group" aria-label="Affiliations">
-      <img src="static/logos/inst1.svg" alt="Institution One" width="200" height="60">
-    </div>
-    -->
-
-    <div class="buttons">
-      <a class="btn" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h11l5 5v13H4z"/><path d="M15 3v5h5"/></svg>Paper</a>
-      <span class="btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Code <span class="tag">soon</span></span>
-      <a class="btn" href="#bibtex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l5 5v11a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="M9 13h6M9 17h6"/></svg>BibTeX</a>
-    </div>
-    <p class="notes">
-      <sup>&dagger;</sup>Equal contribution.<br>
-      Contact: <a href="mailto:author@example.com">author@example.com</a>
-    </p>
-
-    <div class="tldr reveal">
-      <span class="tag">TL;DR</span>
-      <ul>
-        <li><b>The setting.</b> One or two sentences on the problem area.</li>
-        <li><b>The problem.</b> What is missing or broken in existing work.</li>
-        <li><b>What we do.</b> The approach, with its contributions:
-          <ul>
-            <li>contribution one;</li>
-            <li>contribution two;</li>
-            <li>contribution three.</li>
-          </ul>
-        </li>
-        <li><b>The effect.</b> The headline result in one sentence.</li>
-      </ul>
-    </div>
+    <p class="kicker">An open initiative &middot; Lean 4</p>
+    <h1><span class="brand">Flywheel</span>: AI Tooling for Formalizing Computer Science in Lean</h1>
+    <p class="lead">Open-source AI-for-math tooling (autoformalization agents, provers, harnesses, benchmarks, and data pipelines) and the unified, formally verified library of computer science it builds. It brings together efforts that are now running in parallel.</p>
+    <div class="buttons"><span class="btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>Docs <span class="tag">soon</span></span><span class="btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Code <span class="tag">soon</span></span><span class="btn soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h11l5 5v13H4z"/><path d="M15 3v5h5"/></svg>Whitepaper <span class="tag">soon</span></span></div>
   </div>
 </header>
 
-<!-- ============ 01 OVERVIEW: modes, flow diagram, callout ============ -->
-<section id="overview">
-  <div class="wrap">
-    <p class="kicker">01 &middot; Overview</p>
-    <h2>Section headline that states the takeaway</h2>
-    <p class="lead reveal">Lead paragraph introducing the section. Use <b>bold</b> for key terms.</p>
-    <div class="modes reveal">
-      <div class="mode"><span class="h">Mode one</span><b>Short title</b><p>One or two sentences describing this mode.</p><span class="stat"><em>00.0%</em> headline metric</span></div>
-      <div class="mode c2"><span class="h">Mode two</span><b>Short title</b><p>One or two sentences describing this mode.</p><span class="stat"><em>00.0%</em> headline metric</span></div>
-      <div class="mode c3"><span class="h">Mode three</span><b>Short title</b><p>One or two sentences describing this mode.</p><span class="stat"><em>00.0%</em> headline metric</span></div>
-    </div>
-  </div>
+<section>
   <div class="wide">
-    <div class="fighead wideh"><span class="fk">Figure label</span><span class="ft">Figure title in one line</span></div>
-    <div class="flow reveal" role="group" aria-label="How the two components interact">
-      <div class="node plain"><span class="h">Component A</span><b>What component A does</b>
-        <ul>
-          <li>First responsibility.</li>
-          <li>Second responsibility.</li>
-        </ul>
-        <span class="tools"><b>Tools</b>What it has access to.</span>
-      </div>
-      <div class="arrows" aria-hidden="true"><span class="a fwd">what A sends to B</span><span class="a back">what B returns to A</span></div>
-      <div class="node accent"><span class="h">Component B</span><b>What component B does</b>
-        <ul>
-          <li>First responsibility.</li>
-          <li>Second responsibility.</li>
-        </ul>
-        <span class="tools"><b>Tools</b>What it has access to.</span>
-      </div>
-    </div>
-    <p class="flownote reveal">One-line note under the diagram.</p>
-  </div>
-  <div class="wrap">
-    <div class="callout reveal"><span class="h">The goal</span>A highlighted statement of the goal or a key definition.</div>
-  </div>
-</section>
-
-<!-- ============ 02 METHOD: numbered issues, figure + text split, pairs, tiles ============ -->
-<section id="method">
-  <div class="wrap">
-    <p class="kicker">02 &middot; Method</p>
-    <h2>Section headline that states the takeaway</h2>
-    <p class="lead reveal">Lead paragraph.</p>
-    <ol class="issues reveal">
-      <li><b>Point one</b>Explanation of the first point.</li>
-      <li><b>Point two</b>Explanation of the second point.</li>
-      <li><b>Point three</b>Explanation of the third point.</li>
-    </ol>
-  </div>
-  <div class="wide">
-    <div class="split reveal">
-      <figure class="framed">
-        <img src="static/placeholder.svg" alt="Describe the figure." width="800" height="450">
-        <figcaption><b>Figure title.</b> Caption text.</figcaption>
-      </figure>
-      <div>
-        <h3 class="tight">Subsection title</h3>
-        <p>Text that sits beside the figure.</p>
-        <ul class="props">
-          <li><b>(a) Property.</b> Description.</li>
-          <li><b>(b) Property.</b> Description.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="wrap">
-    <h3>Problems and answers</h3>
-    <div class="pairs reveal">
-      <div class="pair"><span class="h">Issue 1 &middot; Name</span><p>Description of the issue.</p><div class="ans"><b>Our answer.</b> How we address it.</div></div>
-      <div class="pair"><span class="h">Issue 2 &middot; Name</span><p>Description of the issue.</p><div class="ans"><b>Our answer.</b> How we address it.</div></div>
-    </div>
-    <div class="tiles four reveal">
-      <div class="tile"><span class="h">Tile one</span>Short description.<span class="cert">Footnote line.</span></div>
-      <div class="tile"><span class="h">Tile two</span>Short description.<span class="cert">Footnote line.</span></div>
-      <div class="tile"><span class="h">Tile three</span>Short description.<span class="cert">Footnote line.</span></div>
-      <div class="tile"><span class="h">Tile four</span>Short description.<span class="cert">Footnote line.</span></div>
+    <div class="features reveal">
+      <div class="feature"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 0 6h-1v1a4 4 0 0 1-8 0v-1H7a3 3 0 0 1 0-6h1V6a4 4 0 0 1 4-4z"/></svg></span><b>AI4Math tooling for Lean</b><p>Agents, provers, and harnesses that formalize and prove at research scale, as open models and open code.</p></div>
+      <div class="feature"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></span><b>A unified library of computer science</b><p>One coherent, machine-checked library of CS definitions, theorems, and verified algorithms.</p></div>
+      <div class="feature"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span><b>Shared benchmarks and data</b><p>Open evaluation sets and training data drawn from the library, so progress is measurable and reproducible.</p></div>
+      <div class="feature"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><path d="M8.5 7.5l2 8M15.5 7.5l-2 8M9 6h6"/></svg></span><b>Coordination across efforts</b><p>Connects projects now running in parallel through shared conventions and interfaces.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ 03 WALKTHROUGH: spotlight over a figure (app.js) ============
-     Each step's data-region is "left top width height" as percentages of the image. -->
-<section id="walkthrough">
+<section id="flywheel">
   <div class="wrap">
-    <p class="kicker">03 &middot; Walkthrough</p>
-    <h2>Section headline that states the takeaway</h2>
+    <p class="kicker">The flywheel</p>
+    <h2>Better tools grow the library, and a bigger library makes better tools</h2>
+    <p class="lead reveal">AI provers improve with more formalized material to learn from and build on. A unified library gives them that material, and each result they formalize adds to it.</p>
   </div>
   <div class="wide">
-    <div class="fighead wideh"><span class="fk">Walkthrough</span><span class="ft">Figure title in one line</span></div>
     <div class="pipe reveal" id="pipe">
-      <div class="walk"><img src="static/placeholder.svg" alt="Describe the figure." width="800" height="450"><div class="spot" aria-hidden="true"></div></div>
-      <ol class="steps" aria-label="Walkthrough">
-        <li data-step="0" data-n="01" data-region="2 4 46 44"><b>Step one</b>What this region of the figure shows.</li>
-        <li data-step="1" data-n="02" data-region="52 4 46 44"><b>Step two</b>What this region of the figure shows.</li>
-        <li data-step="2" data-n="03" data-region="2 52 46 44"><b>Step three</b>What this region of the figure shows.</li>
-        <li data-step="3" data-n="04" data-region="52 52 46 44"><b>Step four</b>What this region of the figure shows.</li>
+      <div class="walk"><img src="static/flywheel.svg" alt="The Flywheel loop: AI tooling formalizes, results unify into one library, the library becomes data and benchmarks that improve the tooling, and cheaper formalization draws in more projects." width="800" height="450"><div class="spot" aria-hidden="true"></div></div>
+      <ol class="steps" aria-label="The flywheel loop">
+        <li data-step="0" data-n="01" data-region="34.5 8 31 20"><b>Formalize</b>AI agents and human contributors formalize CS results with Flywheel&rsquo;s tooling.</li>
+        <li data-step="1" data-n="02" data-region="68.5 40 30.5 20"><b>Unify</b>Results land in, or interoperate with, one shared library rather than staying in separate repositories.</li>
+        <li data-step="2" data-n="03" data-region="34.5 72.5 31 20"><b>Accelerate</b>The library becomes training data, retrieval context, and benchmarks, so the AI tooling gets better.</li>
+        <li data-step="3" data-n="04" data-region="1 40 30.5 20"><b>Grow</b>Cheaper formalization draws in more projects and contributors, and the loop repeats.</li>
         <li class="ctl"><button type="button">Pause</button><span>Click a step to jump to it.</span></li>
       </ol>
     </div>
   </div>
 </section>
 
-<!-- ============ 04 RESULTS: table, findings, ablation ladder ============ -->
-<section id="results">
+<section>
   <div class="wrap">
-    <p class="kicker">04 &middot; Results</p>
-    <h2>Section headline that states the takeaway</h2>
-    <p class="lead reveal">Describe the evaluation setup.</p>
-    <div class="tablewrap reveal"><table>
-      <thead><tr><th>System</th><th class="num">Metric A</th><th class="num">Metric B</th><th class="num">Metric C</th></tr></thead>
-      <tbody>
-        <tr class="group"><td colspan="4">Baselines</td></tr>
-        <tr><td>Baseline one</td><td class="num">00.0</td><td class="num">00.0</td><td class="num">00.0</td></tr>
-        <tr><td>Baseline two</td><td class="num second">00.0</td><td class="num">00.0</td><td class="num">00.0</td></tr>
-        <tr class="group"><td colspan="4">Proposed (ours)</td></tr>
-        <tr class="ours"><td>Ours</td><td class="num best">00.0</td><td class="num best">00.0</td><td class="num best">00.0</td></tr>
-      </tbody>
-    </table></div>
-    <p class="tnote">Table caption. <b>Bold</b> = best, <u>underline</u> = second best.</p>
-
-    <div class="findings reveal">
-      <div class="finding">
-        <span class="h">Finding group one</span>
-        <ol>
-          <li><b>Claim.</b> Supporting evidence.</li>
-          <li><b>Claim.</b> Supporting evidence.</li>
-        </ol>
-      </div>
-      <div class="finding">
-        <span class="h">Finding group two</span>
-        <ol>
-          <li><b>Claim.</b> Supporting evidence.</li>
-        </ol>
-      </div>
-    </div>
-
-    <p class="kicker">Ablation</p>
-    <h3 class="tight">What does each component add?</h3>
-    <div class="ladder reveal">
-      <div class="rung"><span class="t">Base</span><span class="k">00.0<small>%</small></span><span class="k2">secondary metric</span><span class="l">Description.</span></div>
-      <div class="rung"><span class="t">+ component A</span><span class="k">00.0<small>%</small></span><span class="k2">secondary metric</span><span class="l">Description.</span></div>
-      <div class="rung final"><span class="t">+ component B (full)</span><span class="k">00.0<small>%</small></span><span class="k2">secondary metric</span><span class="l">Description.</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 05 CHART: staged scatter with tooltips (app.js) ============
-     Marks with data-stage="n" appear at step n. A .hit circle right after a .mark gives it a tooltip.
-     data-series="1|2|3" ties marks to the legend and to --c1/--c2/--c3. -->
-<section id="chart">
-  <div class="wrap">
-    <p class="kicker">05 &middot; Chart</p>
-    <h2>Section headline that states the takeaway</h2>
-    <p class="lead reveal">Describe what the chart measures.</p>
+    <h2>Sponsors and Partners</h2>
+    <p class="reveal">[TBD: partner organizations and projects.] Interested? <a href="contributing.html">Get in touch</a>.</p>
   </div>
   <div class="wide">
-    <div class="chartwrap reveal" id="chartwrap">
-      <div class="fighead"><span class="fk">Chart</span><span class="ft">Chart title in one line</span></div>
-      <div class="chartcol">
-      <svg class="chart" viewBox="0 0 760 400" role="group" data-stage="3" aria-label="Describe the chart.">
-<line x1="58" y1="270" x2="738" y2="270" stroke="#ecebe5"/><text x="48" y="274" text-anchor="end" font-size="15" fill="#454a55">25</text>
-<line x1="58" y1="190" x2="738" y2="190" stroke="#ecebe5"/><text x="48" y="194" text-anchor="end" font-size="15" fill="#454a55">50</text>
-<line x1="58" y1="110" x2="738" y2="110" stroke="#ecebe5"/><text x="48" y="114" text-anchor="end" font-size="15" fill="#454a55">75</text>
-<line x1="58" y1="18" x2="58" y2="350" stroke="#c9c6bb"/><line x1="58" y1="350" x2="738" y2="350" stroke="#c9c6bb"/>
-<text x="398" y="390" text-anchor="middle" font-size="15.5" fill="#454a55">X-axis label</text>
-<text transform="translate(14 184) rotate(-90)" text-anchor="middle" font-size="15.5" fill="#454a55">Y-axis label</text>
-<g class="mark" data-stage="1" data-series="1"><circle cx="200" cy="280" r="11" fill="#fff" stroke="#737373" stroke-width="2.6"/></g><circle class="hit" cx="200" cy="280" r="18" data-name="Point A" data-val="value A" data-color="#737373" data-sub="series one"/>
-<g class="mark" data-stage="2" data-series="2" style="--d:.1s"><circle cx="380" cy="200" r="11" fill="#fff" stroke="#2a78d6" stroke-width="2.6"/></g><circle class="hit" data-stage="2" cx="380" cy="200" r="18" data-name="Point B" data-val="value B" data-color="#2a78d6" data-sub="series two"/>
-<g class="mark" data-stage="3" data-series="3" style="--d:.2s"><circle class="ping" cx="560" cy="100" r="12" fill="none" stroke="#e08a1e" stroke-width="2"/><circle cx="560" cy="100" r="12" fill="#e08a1e" stroke="#fff" stroke-width="2.5"/></g><circle class="hit" data-stage="3" cx="560" cy="100" r="18" data-name="Point C (ours)" data-val="value C" data-color="#e08a1e" data-sub="series three"/>
-      </svg>
-      <div class="keys">
-        <div class="key" role="group" aria-label="Key">
-          <span class="kl">Series:</span>
-          <span data-series="1"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="#fff" stroke="#737373" stroke-width="2"/></svg>Series one</span>
-          <span data-series="2"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="#fff" stroke="#2a78d6" stroke-width="2"/></svg>Series two</span>
-          <span data-series="3"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="#e08a1e"/></svg>Series three</span>
-        </div>
-      </div>
-      </div>
-      <ol class="steps" aria-label="How to read the chart">
-        <li data-step="0" data-n="01"><b>Stage one</b>What the first points show.</li>
-        <li data-step="1" data-n="02"><b>Stage two</b>What gets added.</li>
-        <li data-step="2" data-n="03"><b>Stage three</b>The main result.</li>
-        <li class="ctl"><button type="button">Replay</button><span>Click a step to jump to it.</span></li>
-      </ol>
-    </div>
-    <p class="tnote">Hover a point for details.</p>
-    <div class="cost3 reveal">
-      <div class="c"><span class="h"><i class="sw-1"></i>Setting one</span><span class="big">00.0<small>%</small></span><span class="at">context line</span><span class="vs">Comparison sentence.</span></div>
-      <div class="c"><span class="h"><i class="sw-2"></i>Setting two</span><span class="big">00.0<small>%</small></span><span class="at">context line</span><span class="vs">Comparison sentence.</span></div>
-      <div class="c"><span class="h"><i class="sw-3"></i>Setting three</span><span class="big">00.0<small>%</small></span><span class="at">context line</span><span class="vs">Comparison sentence.</span></div>
+    <!-- Replace a slot with: <a class="slot" href="https://partner.example"><img src="static/logos/partner.svg" alt="Partner"></a> -->
+    <div class="partners reveal">
+      <div class="slot">Partner logo</div><div class="slot">Partner logo</div><div class="slot">Partner logo</div><div class="slot">Partner logo</div><div class="slot">Partner logo</div>
     </div>
   </div>
 </section>
 
-<!-- ============ 06 CITE ============ -->
-<section id="bibtex">
-  <div class="wrap">
-    <p class="kicker">06 &middot; Cite</p>
-    <h2>BibTeX</h2>
-    <p class="cite reveal">If you find this work useful, please cite <a href="#" target="_blank" rel="noopener">the paper</a>.</p>
-    <div class="bibwrap reveal">
-      <button type="button" class="copybtn">Copy</button>
-<pre class="bibtex">@article{author2026project,
-  title   = {{Project}: Paper Title Goes Here},
-  author  = {Author, First and Author, Second},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026}
-}</pre>
+<!-- Shared footer: generated, keep identical across pages. -->
+<footer class="site-footer">
+  <div class="wide">
+    <div class="cols">
+      <div class="about"><h4>Flywheel</h4><p>Open AI-for-math tooling for Lean, and the unified library of computer science it builds.</p></div>
+      <div><h4>Initiative</h4><ul><li><a href="about.html">About</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="governance.html">Governance</a></li><li><a href="partners.html">Partners</a></li></ul></div>
+      <div><h4>Build</h4><ul><li><a href="#">Code</a></li><li><a href="#">Documentation</a></li><li><a href="contributing.html">Contributing</a></li><li><a href="#">Zulip</a></li></ul></div>
+      <div><h4>Lean ecosystem</h4><ul><li><a href="https://lean-lang.org/">Lean</a></li><li><a href="https://leanprover-community.github.io/">Mathlib</a></li><li><a href="https://www.cslib.io/">CSLib</a></li><li><a href="https://reservoir.lean-lang.org/">Reservoir</a></li></ul></div>
+      <div><h4>Policies</h4><ul><li><a href="#">Code of Conduct</a></li><li><a href="#">License</a></li></ul></div>
     </div>
+    <div class="legal">&copy; 2026 Flywheel contributors</div>
   </div>
-</section>
-
-<footer>
-  <div class="wrap">Project &middot; 2026</div>
 </footer>
 
 <div id="tip" role="tooltip" aria-hidden="true"></div>

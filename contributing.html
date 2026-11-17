@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Analytics (optional): paste your own tag here. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Involved | Flywheel</title>
+  <meta name="description" content="Flywheel builds open AI-for-math tooling for Lean, and uses it to grow one unified, formally verified library of computer science.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Get Involved | Flywheel">
+  <meta property="og:description" content="Flywheel builds open AI-for-math tooling for Lean, and uses it to grow one unified, formally verified library of computer science.">
+  <meta property="og:image" content="https://example.github.io/flywheel/static/flywheel.svg"><!-- TBD: real URL -->
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>.reveal{opacity:1;transform:none}.steps .ctl{display:none}</style></noscript>
+</head>
+<body>
+
+<!-- Shared header: generated, keep identical across pages. -->
+<div class="site-header">
+  <div class="wide">
+    <a class="mark" href="index.html"><img src="static/favicon.svg" alt="" width="24" height="24">Flywheel</a>
+    <nav class="site-nav" aria-label="Site"><a href="about.html">About</a><a href="contributing.html" aria-current="page">Get Involved</a><a href="roadmap.html">Roadmap</a><a href="governance.html">Governance</a><a href="partners.html">Partners</a><a href="resources.html">News &amp; Resources</a><a class="gh" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></nav>
+  </div>
+</div>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">Get Involved</p>
+    <h1>Everyone is welcome to contribute</h1>
+    <p class="lead">Flywheel is open to anyone working on AI for math, CS formalization, or Lean infrastructure.</p>
+  </div>
+</header>
+<section>
+  <div class="wrap">
+    <h2>Ways to contribute</h2>
+    <div class="pairs reveal">
+      <div class="pair"><span class="h">Tool builders</span><p>Work on agents, provers, harnesses, retrieval, linters, or evaluation infrastructure.</p><div class="ans"><b>Start:</b> [TBD: tooling repo or issue list]</div></div>
+      <div class="pair"><span class="h">Formalizers</span><p>Formalize CS results, by hand or with AI assistance, and review pull requests to the library.</p><div class="ans"><b>Start:</b> [TBD: contributing guide]</div></div>
+      <div class="pair"><span class="h">Project maintainers</span><p>Running a parallel effort? Help shape shared conventions and connect your project to Flywheel.</p><div class="ans"><b>Start:</b> <a href="partners.html">Partners</a> or [TBD: contact]</div></div>
+      <div class="pair"><span class="h">Benchmark and data contributors</span><p>Contribute evaluation sets, curated problems, or informal&ndash;formal pairs.</p><div class="ans"><b>Start:</b> [TBD: data guidelines]</div></div>
+    </div>
+    <div class="callout reveal"><span class="h">Talk to us first</span>The best place to ask questions and discuss ideas is the Flywheel channel on Zulip. [TBD: <a href="#">channel link</a>.] Detailed guidelines will be in <code>CONTRIBUTING.md</code> in the repository.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Use Flywheel in your project</h2>
+    <p class="reveal">Add the library to your Lake project (once released):</p>
+    <div class="bibwrap reveal">
+      <button type="button" class="copybtn">Copy</button>
+<pre class="bibtex">-- lakefile.lean
+require flywheel from git
+  "https://github.com/[org]/flywheel" @ "main"</pre>
+    </div>
+  </div>
+</section>
+
+<!-- Shared footer: generated, keep identical across pages. -->
+<footer class="site-footer">
+  <div class="wide">
+    <div class="cols">
+      <div class="about"><h4>Flywheel</h4><p>Open AI-for-math tooling for Lean, and the unified library of computer science it builds.</p></div>
+      <div><h4>Initiative</h4><ul><li><a href="about.html">About</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="governance.html">Governance</a></li><li><a href="partners.html">Partners</a></li></ul></div>
+      <div><h4>Build</h4><ul><li><a href="#">Code</a></li><li><a href="#">Documentation</a></li><li><a href="contributing.html">Contributing</a></li><li><a href="#">Zulip</a></li></ul></div>
+      <div><h4>Lean ecosystem</h4><ul><li><a href="https://lean-lang.org/">Lean</a></li><li><a href="https://leanprover-community.github.io/">Mathlib</a></li><li><a href="https://www.cslib.io/">CSLib</a></li><li><a href="https://reservoir.lean-lang.org/">Reservoir</a></li></ul></div>
+      <div><h4>Policies</h4><ul><li><a href="#">Code of Conduct</a></li><li><a href="#">License</a></li></ul></div>
+    </div>
+    <div class="legal">&copy; 2026 Flywheel contributors</div>
+  </div>
+</footer>
+
+<div id="tip" role="tooltip" aria-hidden="true"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
