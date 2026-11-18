@@ -5,69 +5,81 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Governance | Flywheel</title>
-  <meta name="description" content="Flywheel builds open AI-for-math tooling for Lean, and uses it to grow one unified, formally verified library of computer science.">
+  <meta name="description" content="Flywheel is an open-source toolchain that helps formal libraries of mathematics and theoretical computer science in Lean agree with each other.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Governance | Flywheel">
-  <meta property="og:description" content="Flywheel builds open AI-for-math tooling for Lean, and uses it to grow one unified, formally verified library of computer science.">
-  <meta property="og:image" content="https://example.github.io/flywheel/static/flywheel.svg"><!-- TBD: real URL -->
+  <meta property="og:description" content="Flywheel is an open-source toolchain that helps formal libraries of mathematics and theoretical computer science in Lean agree with each other.">
+  <meta property="og:image" content="https://example.github.io/flywheel/static/logo.svg"><!-- TBD: real URL; social previews need a PNG -->
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=41f234de">
   <noscript><style>.reveal{opacity:1;transform:none}.steps .ctl{display:none}</style></noscript>
 </head>
 <body>
 
-<!-- Shared header: generated, keep identical across pages. -->
+<!-- Shared header: keep identical across pages. -->
 <div class="site-header">
   <div class="wide">
-    <a class="mark" href="index.html"><img src="static/favicon.svg" alt="" width="24" height="24">Flywheel</a>
-    <nav class="site-nav" aria-label="Site"><a href="about.html">About</a><a href="contributing.html">Get Involved</a><a href="roadmap.html">Roadmap</a><a href="governance.html" aria-current="page">Governance</a><a href="partners.html">Partners</a><a href="resources.html">News &amp; Resources</a><a class="gh" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></nav>
+    <a class="mark" href="index.html"><img src="static/logo.svg" alt="" width="26" height="26">Flywheel</a>
+    <nav class="site-nav" aria-label="Site"><a href="about.html">About</a> <a href="tools.html">Tools</a> <a href="roadmap.html">Roadmap</a> <a href="partners.html">Partners</a> <a href="governance.html" aria-current="page">Governance</a> <a href="contributing.html">Get Involved</a> <a href="resources.html">News &amp; Resources</a> <a class="gh" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></nav>
   </div>
 </div>
 
 <header class="page-head">
   <div class="wrap">
-    <p class="kicker">Governance</p>
-    <h1>Who runs Flywheel</h1>
-    <p class="lead">Flywheel has a steering committee and a maintainer team. [TBD: how members are chosen.]</p>
+    <h1>Governance</h1>
+    <p class="lead">A steering committee sets direction and priorities; a maintainer team owns the tools and their releases.</p>
   </div>
 </header>
 <section>
   <div class="wrap">
     <h2>Steering committee</h2>
-    <p class="reveal">Sets the overall direction, secures support, and coordinates with partner projects. [TBD]</p>
-    <div class="people reveal"><div class="person"><span class="av">?</span><div><b>[Name]</b><span>[Affiliation]</span></div></div><div class="person"><span class="av">?</span><div><b>[Name]</b><span>[Affiliation]</span></div></div><div class="person"><span class="av">?</span><div><b>[Name]</b><span>[Affiliation]</span></div></div></div>
+    <p>The steering committee sets the direction and priorities of the project and will include a representative of each committed partner.</p>
+    <div class="team">
+      <a class="member" href="https://vganesh1.github.io/" target="_blank" rel="noopener"><img src="static/people/vijay-ganesh.jpg" alt="Vijay Ganesh" width="220" height="220" loading="lazy"><b>Vijay Ganesh</b> <span>Professor of Computer Science, Georgia Tech; Director, AI4Math Center</span></a>
+      <a class="member" href="https://people.eecs.berkeley.edu/~venkatg/" target="_blank" rel="noopener"><img src="static/people/venkat-guruswami.jpg" alt="Venkat Guruswami" width="220" height="220" loading="lazy"><b>Venkat Guruswami</b> <span>Professor of EECS and Mathematics, UC Berkeley; Director, Simons Institute for the Theory of Computing</span></a>
+    </div>
+    <!-- Partner representatives: hidden until partnerships are confirmed. -->
   </div>
 </section>
-
 <section>
   <div class="wrap">
     <h2>Maintainers</h2>
-    <p class="reveal">Curate the tooling and library repositories and their technical direction. [TBD]</p>
-    <h3>Lead maintainer</h3>
-    <div class="people reveal"><div class="person"><span class="av">?</span><div><b>[Name]</b><span>[Affiliation]</span></div></div></div>
-    <h3>Area maintainers</h3>
-    <div class="people reveal"><div class="person"><span class="av">?</span><div><b>[Name]</b><span>Agents &amp; provers</span></div></div><div class="person"><span class="av">?</span><div><b>[Name]</b><span>Benchmarks &amp; data</span></div></div><div class="person"><span class="av">?</span><div><b>[Name]</b><span>Library foundations</span></div></div><div class="person"><span class="av">?</span><div><b>[Name]</b><span>Infrastructure &amp; CI</span></div></div></div>
+    <p>Maintainers own the tools&rsquo; technical direction and releases, and are invited on the basis of sustained contributions.</p>
+    <div class="team">
+      <a class="member" href="https://logan-cole-luna.github.io/" target="_blank" rel="noopener"><img src="static/people/logan-luna.jpg" alt="Logan Luna" width="220" height="220" loading="lazy"><b>Logan Luna</b> <span>Maintainer; Georgia Tech</span></a>
+    </div>
   </div>
 </section>
-
+<section>
+  <div class="wrap">
+    <h2>Reference definitions</h2>
+    <p>Each reference is proposed with its source in the literature, reviewed by domain experts and the relevant Mathlib or CSLib maintainers, and versioned once accepted.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Contributions</h2>
+    <p>All code is reviewed on GitHub. AI agents may propose code, bridges, and references; a human maintainer approves every merge.</p>
+  </div>
+</section>
 <section>
   <div class="wrap">
     <h2>Contact</h2>
-    <p class="reveal">The best way to reach us is the Flywheel channel on <a href="#">Zulip</a> [TBD]. For bugs and feature requests, open an issue on <a href="#">GitHub</a> [TBD].</p>
+    <p>Vijay Ganesh, Georgia Tech. A Flywheel channel on the <a href="#">Lean Zulip</a> will be announced.</p>
   </div>
 </section>
 
-<!-- Shared footer: generated, keep identical across pages. -->
+<!-- Shared footer: keep identical across pages. -->
 <footer class="site-footer">
   <div class="wide">
     <div class="cols">
-      <div class="about"><h4>Flywheel</h4><p>Open AI-for-math tooling for Lean, and the unified library of computer science it builds.</p></div>
-      <div><h4>Initiative</h4><ul><li><a href="about.html">About</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="governance.html">Governance</a></li><li><a href="partners.html">Partners</a></li></ul></div>
-      <div><h4>Build</h4><ul><li><a href="#">Code</a></li><li><a href="#">Documentation</a></li><li><a href="contributing.html">Contributing</a></li><li><a href="#">Zulip</a></li></ul></div>
+      <div class="about"><h4>Flywheel</h4><p>Open-source tools for harmonizing formal libraries of mathematics and theoretical computer science in Lean.</p></div>
+      <div><h4>Initiative</h4><ul><li><a href="about.html">About</a></li><li><a href="tools.html">Tools</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="partners.html">Partners</a></li><li><a href="governance.html">Governance</a></li></ul></div>
+      <div><h4>Build</h4><ul><li><a href="#">Code</a></li><li><a href="#">Documentation</a></li><li><a href="contributing.html">Get Involved</a></li><li><a href="#">Zulip</a></li></ul></div>
       <div><h4>Lean ecosystem</h4><ul><li><a href="https://lean-lang.org/">Lean</a></li><li><a href="https://leanprover-community.github.io/">Mathlib</a></li><li><a href="https://www.cslib.io/">CSLib</a></li><li><a href="https://reservoir.lean-lang.org/">Reservoir</a></li></ul></div>
       <div><h4>Policies</h4><ul><li><a href="#">Code of Conduct</a></li><li><a href="#">License</a></li></ul></div>
     </div>
@@ -76,6 +88,6 @@
 </footer>
 
 <div id="tip" role="tooltip" aria-hidden="true"></div>
-<script src="app.js" defer></script>
+<script src="app.js?v=2a6e9ba6" defer></script>
 </body>
 </html>

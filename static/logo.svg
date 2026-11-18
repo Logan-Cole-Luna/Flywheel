@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flywheel">
+  <path d="M39.87 12.53 A21 21 0 0 1 52.80 34.92" fill="none" stroke="#16302c" stroke-width="5.6" stroke-linecap="round"/>
+  <path d="M44.93 48.55 A21 21 0 0 1 19.07 48.55" fill="none" stroke="#16302c" stroke-width="5.6" stroke-linecap="round"/>
+  <path d="M11.20 34.92 A21 21 0 0 1 24.13 12.53" fill="none" stroke="#16302c" stroke-width="5.6" stroke-linecap="round"/>
+  <path d="M29.32 14.10 L34.68 14.10" stroke="#0f8a78" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M28.47 8.36 L35.53 8.36" stroke="#0f8a78" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M48.84 38.63 L46.17 43.27" stroke="#0f8a78" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M54.24 40.76 L50.70 46.88" stroke="#0f8a78" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M17.83 43.27 L15.16 38.63" stroke="#0f8a78" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M13.30 46.88 L9.76 40.76" stroke="#0f8a78" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M32.42 27.22 Q37.25 22.91 48.11 22.70" fill="none" stroke="#16302c" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M35.93 34.75 Q37.25 41.09 32.00 50.60" fill="none" stroke="#16302c" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M27.65 34.03 Q21.50 32.00 15.89 22.70" fill="none" stroke="#16302c" stroke-width="2.3" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="4.2" fill="#0f8a78"/>
+</svg>

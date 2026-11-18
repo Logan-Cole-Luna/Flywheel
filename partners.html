@@ -5,79 +5,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Partners | Flywheel</title>
-  <meta name="description" content="Flywheel builds open AI-for-math tooling for Lean, and uses it to grow one unified, formally verified library of computer science.">
+  <meta name="description" content="Flywheel is an open-source toolchain that helps formal libraries of mathematics and theoretical computer science in Lean agree with each other.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Partners | Flywheel">
-  <meta property="og:description" content="Flywheel builds open AI-for-math tooling for Lean, and uses it to grow one unified, formally verified library of computer science.">
-  <meta property="og:image" content="https://example.github.io/flywheel/static/flywheel.svg"><!-- TBD: real URL -->
+  <meta property="og:description" content="Flywheel is an open-source toolchain that helps formal libraries of mathematics and theoretical computer science in Lean agree with each other.">
+  <meta property="og:image" content="https://example.github.io/flywheel/static/logo.svg"><!-- TBD: real URL; social previews need a PNG -->
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=41f234de">
   <noscript><style>.reveal{opacity:1;transform:none}.steps .ctl{display:none}</style></noscript>
 </head>
 <body>
 
-<!-- Shared header: generated, keep identical across pages. -->
+<!-- Shared header: keep identical across pages. -->
 <div class="site-header">
   <div class="wide">
-    <a class="mark" href="index.html"><img src="static/favicon.svg" alt="" width="24" height="24">Flywheel</a>
-    <nav class="site-nav" aria-label="Site"><a href="about.html">About</a><a href="contributing.html">Get Involved</a><a href="roadmap.html">Roadmap</a><a href="governance.html">Governance</a><a href="partners.html" aria-current="page">Partners</a><a href="resources.html">News &amp; Resources</a><a class="gh" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></nav>
+    <a class="mark" href="index.html"><img src="static/logo.svg" alt="" width="26" height="26">Flywheel</a>
+    <nav class="site-nav" aria-label="Site"><a href="about.html">About</a> <a href="tools.html">Tools</a> <a href="roadmap.html">Roadmap</a> <a href="partners.html" aria-current="page">Partners</a> <a href="governance.html">Governance</a> <a href="contributing.html">Get Involved</a> <a href="resources.html">News &amp; Resources</a> <a class="gh" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></nav>
   </div>
 </div>
 
 <header class="page-head">
   <div class="wrap">
-    <p class="kicker">Partners</p>
-    <h1>Connecting the efforts already underway</h1>
-    <p class="lead">Flywheel doesn&rsquo;t replace existing projects. It gives them shared tooling, shared conventions, and a common place for their results.</p>
+    <h1>Partners</h1>
+    <p class="lead">Discussions with library teams and organizations are in progress. Partners will be listed here once confirmed.</p>
   </div>
 </header>
 <section>
   <div class="wrap">
-    <h2>Partner and related projects</h2>
-    <div class="tablewrap reveal"><table>
-      <thead><tr><th>Project</th><th>Focus</th><th>Relationship to Flywheel</th></tr></thead>
-      <tbody>
-        <tr><td>[Project]</td><td>[TBD]</td><td>[TBD]</td></tr>
-        <tr><td>[Project]</td><td>[TBD]</td><td>[TBD]</td></tr>
-      </tbody>
-    </table></div>
-    <p class="tnote">Working on AI for Lean or on CS formalization and not listed? <a href="contributing.html">Get in touch</a>.</p>
-  </div>
-  <div class="wide">
-    <div class="fighead wideh"><span class="fk">How projects connect</span><span class="ft">Projects stay independent and share a common core</span></div>
-    <div class="flow reveal" role="group" aria-label="How partner projects connect to Flywheel">
-      <div class="node plain"><span class="h">Partner projects</span><b>Independent efforts, in their own repositories</b>
-        <ul><li>Keep their own scope, roadmap, and maintainers.</li><li>Use Flywheel&rsquo;s tooling and adopt shared conventions where they overlap.</li><li>Upstream mature, general results.</li></ul>
-      </div>
-      <div class="arrows" aria-hidden="true"><span class="a fwd">results, data, and feedback</span><span class="a back">tooling, benchmarks, and the core library</span></div>
-      <div class="node accent"><span class="h">Flywheel</span><b>Shared tooling and core library</b>
-        <ul><li>Builds and hosts the AI tooling, benchmarks, and CI.</li><li>Maintains the common library and its conventions.</li><li>Tracks who is formalizing what, to avoid duplication.</li></ul>
-      </div>
-    </div>
+    <h2>Working with Flywheel</h2>
+    <p>Library teams keep their own repositories and governance, run the tools in their CI, and decide which findings and bridges to accept. Teams interested in using the tools are invited to <a href="contributing.html">get in touch</a>.</p>
+<!-- Partner table: hidden until partnerships are confirmed. -->
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <h2>Supporting organizations</h2>
-    <p class="reveal">[TBD: sponsors, institutions, and funders.]</p>
-  </div>
-  <div class="wide">
-    <div class="partners reveal"><div class="slot">Organization logo</div><div class="slot">Organization logo</div><div class="slot">Organization logo</div></div>
-  </div>
-</section>
-
-<!-- Shared footer: generated, keep identical across pages. -->
+<!-- Shared footer: keep identical across pages. -->
 <footer class="site-footer">
   <div class="wide">
     <div class="cols">
-      <div class="about"><h4>Flywheel</h4><p>Open AI-for-math tooling for Lean, and the unified library of computer science it builds.</p></div>
-      <div><h4>Initiative</h4><ul><li><a href="about.html">About</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="governance.html">Governance</a></li><li><a href="partners.html">Partners</a></li></ul></div>
-      <div><h4>Build</h4><ul><li><a href="#">Code</a></li><li><a href="#">Documentation</a></li><li><a href="contributing.html">Contributing</a></li><li><a href="#">Zulip</a></li></ul></div>
+      <div class="about"><h4>Flywheel</h4><p>Open-source tools for harmonizing formal libraries of mathematics and theoretical computer science in Lean.</p></div>
+      <div><h4>Initiative</h4><ul><li><a href="about.html">About</a></li><li><a href="tools.html">Tools</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="partners.html">Partners</a></li><li><a href="governance.html">Governance</a></li></ul></div>
+      <div><h4>Build</h4><ul><li><a href="#">Code</a></li><li><a href="#">Documentation</a></li><li><a href="contributing.html">Get Involved</a></li><li><a href="#">Zulip</a></li></ul></div>
       <div><h4>Lean ecosystem</h4><ul><li><a href="https://lean-lang.org/">Lean</a></li><li><a href="https://leanprover-community.github.io/">Mathlib</a></li><li><a href="https://www.cslib.io/">CSLib</a></li><li><a href="https://reservoir.lean-lang.org/">Reservoir</a></li></ul></div>
       <div><h4>Policies</h4><ul><li><a href="#">Code of Conduct</a></li><li><a href="#">License</a></li></ul></div>
     </div>
@@ -86,6 +57,6 @@
 </footer>
 
 <div id="tip" role="tooltip" aria-hidden="true"></div>
-<script src="app.js" defer></script>
+<script src="app.js?v=2a6e9ba6" defer></script>
 </body>
 </html>

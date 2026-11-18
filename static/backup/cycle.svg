@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="fw-title fw-desc" class="fig-hub">
+  <title id="fw-title">Five library definitions of polynomial time checked against one reference</title>
+  <desc id="fw-desc">A reference definition of polynomial time, for single-tape Turing machines with binary input, is at the center. Five library definitions surround it. Library 1 is identical to the reference. Library 2 uses multi-tape machines and is equivalent up to a quadratic overhead. Library 3 uses random-access machines with logarithmic cost and is equivalent up to a polynomial overhead. Library 4 uses unary input and is refuted by a counterexample, since pseudo-polynomial algorithms satisfy its bound. Library 5 uses unit-cost random-access machines and is refuted by a counterexample, since n squarings produce a number of size 2 to the 2 to the n.</desc>
+  <style>
+    .fw-serif { font-family: "Source Serif 4", Georgia, serif; fill: #15161a; }
+    .fw-sans { font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; fill: #454a55; }
+    .fw-mono { font-family: "Source Code Pro", Menlo, monospace; fill: #15161a; }
+    .fw-name { font-size: 17px; font-weight: 600; }
+    .fw-sub { font-size: 14px; }
+    .fw-bad { font-size: 13px; fill: #a23d16; font-style: italic; }
+    .fw-lab { font-size: 13.5px; font-weight: 600; }
+  </style>
+  <rect width="1000" height="420" fill="#ffffff"/>
+
+  <!-- faint wheel through the five definitions -->
+  <ellipse cx="500" cy="216" rx="400" ry="178" fill="none" stroke="#d9d6cd" stroke-width="1.2" stroke-dasharray="2 5"/>
+
+  <!-- edges -->
+  <g stroke-linecap="round">
+    <line x1="497" y1="92" x2="497" y2="174" stroke="#15161a" stroke-width="1.4"/>
+    <line x1="503" y1="92" x2="503" y2="174" stroke="#15161a" stroke-width="1.4"/>
+    <line x1="282" y1="112" x2="392" y2="180" stroke="#0f6e63" stroke-width="2"/>
+    <line x1="718" y1="112" x2="608" y2="180" stroke="#0f6e63" stroke-width="2"/>
+    <line x1="282" y1="320" x2="400" y2="262" stroke="#a23d16" stroke-width="1.6" stroke-dasharray="6 5"/>
+    <line x1="718" y1="320" x2="600" y2="262" stroke="#a23d16" stroke-width="1.6" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- edge labels -->
+  <g class="fw-sans fw-lab">
+    <rect x="512" y="122" width="78" height="24" fill="#ffffff"/>
+    <text x="516" y="139" fill="#15161a">= identical</text>
+    <rect x="232" y="148" width="132" height="24" fill="#ffffff"/>
+    <text x="236" y="165" fill="#0b5a51"><tspan font-family="'STIX Two Math','Cambria Math','Apple Symbols','Times New Roman',serif" font-weight="400" font-size="17">≃</tspan> up to O(t²)</text>
+    <rect x="636" y="148" width="138" height="24" fill="#ffffff"/>
+    <text x="640" y="165" fill="#0b5a51"><tspan font-family="'STIX Two Math','Cambria Math','Apple Symbols','Times New Roman',serif" font-weight="400" font-size="17">≃</tspan> up to poly(t)</text>
+    <rect x="244" y="276" width="132" height="24" fill="#ffffff"/>
+    <text x="248" y="293" fill="#a23d16">✗ counterexample</text>
+    <rect x="626" y="276" width="132" height="24" fill="#ffffff"/>
+    <text x="630" y="293" fill="#a23d16">✗ counterexample</text>
+  </g>
+
+  <!-- reference -->
+  <rect x="380" y="176" width="240" height="88" fill="#f4f1ea" stroke="#15161a" stroke-width="1.6"/>
+  <text class="fw-sans" x="500" y="199" text-anchor="middle" font-size="12.5" letter-spacing=".04em">REFERENCE</text>
+  <text class="fw-mono" x="500" y="226" text-anchor="middle" font-size="19" font-weight="500">PolyTime</text>
+  <text class="fw-sans fw-sub" x="500" y="250" text-anchor="middle">single-tape TM, binary input</text>
+
+  <!-- library definitions -->
+  <g>
+    <rect x="378" y="18" width="244" height="74" fill="#ffffff" stroke="#15161a"/>
+    <text class="fw-serif fw-name" x="394" y="45">Library 1</text>
+    <text class="fw-sans fw-sub" x="394" y="70">single-tape TM, binary input</text>
+
+    <rect x="32" y="66" width="250" height="74" fill="#ffffff" stroke="#15161a"/>
+    <text class="fw-serif fw-name" x="48" y="93">Library 2</text>
+    <text class="fw-sans fw-sub" x="48" y="118">multi-tape TM, binary input</text>
+
+    <rect x="718" y="66" width="250" height="74" fill="#ffffff" stroke="#15161a"/>
+    <text class="fw-serif fw-name" x="734" y="93">Library 3</text>
+    <text class="fw-sans fw-sub" x="734" y="118">random-access machine, log cost</text>
+
+    <rect x="32" y="300" width="250" height="88" fill="#ffffff" stroke="#15161a"/>
+    <text class="fw-serif fw-name" x="48" y="327">Library 4</text>
+    <text class="fw-sans fw-sub" x="48" y="351">single-tape TM, unary input</text>
+    <text class="fw-sans fw-bad" x="48" y="373">pseudo-polynomial time passes</text>
+
+    <rect x="718" y="300" width="250" height="88" fill="#ffffff" stroke="#15161a"/>
+    <text class="fw-serif fw-name" x="734" y="327">Library 5</text>
+    <text class="fw-sans fw-sub" x="734" y="351">random-access machine, unit cost</text>
+    <text class="fw-sans fw-bad" x="734" y="373">n squarings reach 2<tspan baseline-shift="super" font-size="10">2ⁿ</tspan></text>
+  </g>
+</svg>

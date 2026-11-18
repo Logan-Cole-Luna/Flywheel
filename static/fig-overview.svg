@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 372" role="img" aria-label="Libraries send declarations to a shared index. Five Flywheel tools act on it: semantic search, canonicity checking against reference definitions, harmonization, proof quality, and faithfulness checking, with results checked in Lean. Each library receives a bridge lemma as a pull request, a divergence report, or no change, and findings return to the index as training data." class="fig-svg"><defs><marker id="overview-tip" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.2" markerHeight="5.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#1A1A1A"/></marker><marker id="overview-tiphl" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#0F6E63"/></marker></defs>
+<rect width="1000" height="372" fill="#FFFFFF"/>
+<rect x="16" y="30" width="180" height="290" rx="0" fill="#EFEFEF" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="5 3" />
+<text x="25" y="51" font-size="17.5" fill="#1A1A1A" text-anchor="start"><tspan font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600">Libraries</tspan><tspan font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400"> (in Lean)</tspan></text>
+<path d="M38.0,97.0 V127.0 A20.0,6.4 0 0 0 78.0,127.0 V97.0" fill="#F6C343" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="58" cy="97.0" rx="20.0" ry="6.4" fill="#F9D978" stroke="#1A1A1A" stroke-width="1.4"/>
+<text x="90" y="110" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >Library A</text>
+<text x="90" y="127" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >own repository</text>
+<path d="M38.0,171.0 V201.0 A20.0,6.4 0 0 0 78.0,201.0 V171.0" fill="#F6C343" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="58" cy="171.0" rx="20.0" ry="6.4" fill="#F9D978" stroke="#1A1A1A" stroke-width="1.4"/>
+<text x="90" y="184" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >Library B</text>
+<text x="90" y="201" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >own repository</text>
+<path d="M38.0,245.0 V275.0 A20.0,6.4 0 0 0 78.0,275.0 V245.0" fill="#F6C343" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="58" cy="245.0" rx="20.0" ry="6.4" fill="#F9D978" stroke="#1A1A1A" stroke-width="1.4"/>
+<text x="90" y="258" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >Library C</text>
+<text x="90" y="275" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >own repository</text>
+<polygon points="200,166.76 268,166.76 268,161.0 284,176 268,191.0 268,185.24 200,185.24" fill="#A6A6A6"/>
+<text x="242" y="158" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12.5" text-anchor="middle" fill="#1A1A1A" >declarations</text>
+<rect x="290" y="30" width="430" height="290" rx="0" fill="#EFEFEF" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="5 3" />
+<text x="299" y="51" font-size="17.5" fill="#1A1A1A" text-anchor="start"><tspan font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600">Flywheel</tspan><tspan font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400"> (shared tools)</tspan></text>
+<text x="338" y="140" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12.5" text-anchor="middle" fill="#1A1A1A" >shared index</text>
+<path d="M321.0,159.0 V193.0 A17.0,5.44 0 0 0 355.0,193.0 V159.0" fill="#DDEBF7" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<ellipse cx="338" cy="159.0" rx="17.0" ry="5.44" fill="#EEF4FB" stroke="#1A1A1A" stroke-width="1.4"/>
+<path d="M321,172 A17,5.4 0 0 0 355,172" fill="none" stroke="#1A1A1A" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M321,183 A17,5.4 0 0 0 355,183" fill="none" stroke="#1A1A1A" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M355,176 H380" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M380,97 V273" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M380,97 H394" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="396" y="78" width="200" height="38" rx="6" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="1.1" />
+<text x="404" y="94" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.5" text-anchor="start" fill="#1A1A1A" >1. Semantic search</text>
+<text x="404" y="109" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >find matches across libraries</text>
+<path d="M380,141 H394" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="396" y="122" width="200" height="38" rx="6" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="1.1" />
+<text x="404" y="138" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.5" text-anchor="start" fill="#1A1A1A" >2. Canonicity checking</text>
+<text x="404" y="153" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >compare with references</text>
+<path d="M380,185 H394" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="396" y="166" width="200" height="38" rx="6" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="1.1" />
+<text x="404" y="182" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.5" text-anchor="start" fill="#1A1A1A" >3. Harmonization</text>
+<text x="404" y="197" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >prove bridge lemmas</text>
+<path d="M380,229 H394" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="396" y="210" width="200" height="38" rx="6" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="1.1" />
+<text x="404" y="226" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.5" text-anchor="start" fill="#1A1A1A" >4. Proof quality</text>
+<text x="404" y="241" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >score robustness and reuse</text>
+<path d="M380,273 H394" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="396" y="254" width="200" height="38" rx="6" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="1.1" />
+<text x="404" y="270" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.5" text-anchor="start" fill="#1A1A1A" >5. Faithfulness</text>
+<text x="404" y="285" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >check translations into Lean</text>
+<path d="M667.2,115.4 h18.400000000000002 l7.2,7.2 v28.0 h-25.6 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M663.2,119.4 h18.400000000000002 l7.2,7.2 v28.0 h-25.6 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+<g transform="translate(657.6,122.6) scale(0.8)">
+<path d="M1,1 H26 L35,10 V45 H1 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26,1 V10 H35" fill="none" stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="4" y="4" width="13" height="8" rx="1" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.0" />
+<text x="10.5" y="10.6" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="6.5" text-anchor="middle" fill="#1A1A1A" >&lt;/&gt;</text>
+<text x="18" y="22" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="9.5" text-anchor="middle" fill="#B0221B" >thm</text>
+<path d="M8,24.5 H28" fill="none" stroke="#B0221B" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="18" y="33" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="9.5" text-anchor="middle" fill="#1F5FBF" >proof</text>
+<path d="M5,35.5 H31" fill="none" stroke="#1F5FBF" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="7.0" y="39" width="32.0" height="10" rx="2.5" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<text x="23.0" y="46.8" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="8.5" text-anchor="middle" fill="#FFFFFF" >.lean</text>
+</g>
+<text x="672" y="96" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12.5" text-anchor="middle" fill="#1A1A1A" >reference</text>
+<text x="672" y="110" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12.5" text-anchor="middle" fill="#1A1A1A" >definitions</text>
+<path d="M650,141 H600" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#overview-tip)"/>
+<rect x="604" y="176" width="113.5" height="18" rx="9" fill="#3DA35D" stroke="#24733F" stroke-width="1.0" />
+<circle cx="613" cy="185" r="5.5" fill="#3DA35D"/>
+<path d="M610.525,185.11 L612.45,187.09 L615.75,182.91" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M610.6,185 L612.4,187 L615.6,183" fill="none" stroke="#3DA35D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<text x="621" y="189.3" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="11.5" text-anchor="start" fill="#FFFFFF" >checked in Lean</text>
+<polygon points="724,166.76 760,166.76 760,161.0 776,176 760,191.0 760,185.24 724,185.24" fill="#A6A6A6"/>
+<text x="750" y="158" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12.5" text-anchor="middle" fill="#1A1A1A" >results</text>
+<rect x="780" y="30" width="204" height="290" rx="0" fill="#EFEFEF" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="5 3" />
+<text x="789" y="51" font-size="17.5" fill="#1A1A1A" text-anchor="start"><tspan font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600">Results</tspan><tspan font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400"> (per library)</tspan></text>
+<g transform="translate(798.0,81.0) scale(1.0)">
+<path d="M1,1 H26 L35,10 V45 H1 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26,1 V10 H35" fill="none" stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="4" y="4" width="13" height="8" rx="1" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.0" />
+<text x="10.5" y="10.6" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="6.5" text-anchor="middle" fill="#1A1A1A" >&lt;/&gt;</text>
+<text x="18" y="22" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="9.5" text-anchor="middle" fill="#B0221B" >thm</text>
+<path d="M8,24.5 H28" fill="none" stroke="#B0221B" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="18" y="33" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="9.5" text-anchor="middle" fill="#1F5FBF" >proof</text>
+<path d="M5,35.5 H31" fill="none" stroke="#1F5FBF" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="7.0" y="39" width="32.0" height="10" rx="2.5" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<text x="23.0" y="46.8" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="8.5" text-anchor="middle" fill="#FFFFFF" >.lean</text>
+<path d="M28,-2 L25,8 L29,6 L31,10 L33,0 Z" fill="#C0392B" stroke="#7A1F17" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M34,-2 L37,8 L33,6 L31,10 L29,0 Z" fill="#C0392B" stroke="#7A1F17" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="31" cy="-5" r="6" fill="#F2C230" stroke="#9C7413" stroke-width="0.9"/>
+<path d="M31,-8.6 L32.1,-6.1 L34.6,-5.8 L32.7,-4.1 L33.2,-1.5 L31,-2.8 L28.8,-1.5 L29.3,-4.1 L27.4,-5.8 L29.9,-6.1 Z" fill="#FFF3B0" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<text x="844" y="102" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >Bridge lemma</text>
+<text x="844" y="118" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >pull request</text>
+<circle cx="816" cy="190" r="11" fill="#D64541"/>
+<path d="M811.82,185.82 L820.18,194.18 M811.82,194.18 L820.18,185.82" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+<text x="844" y="188" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >Divergence</text>
+<text x="844" y="204" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >report to maintainers</text>
+<circle cx="816" cy="262" r="11" fill="#3DA35D"/>
+<path d="M811.05,262.22 L814.9,266.18 L821.5,257.82" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+<text x="844" y="260" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >No change</text>
+<text x="844" y="276" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >already canonical</text>
+<path d="M882,320 V350 H338 V196" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-dasharray="5 3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#overview-tip)"/>
+<rect x="491.6875" y="344.0" width="236.625" height="13.750000000000002" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0" />
+<text x="610" y="354" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12.5" text-anchor="middle" fill="#1A1A1A" >findings return to the index as training data</text>
+</svg>

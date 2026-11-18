@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 184" role="img" aria-labelledby="cc-title cc-desc" class="fig-pipe">
+  <title id="cc-title">Stages of a canonicity check</title>
+  <desc id="cc-desc">A library definition is located against its reference by semantic search, then tested on small instances with a SAT/SMT solver. If a counterexample is found, a report is sent to the maintainers. Otherwise an agent proves equivalence in Lean, producing a bridge lemma submitted as a pull request.</desc>
+  <style>
+    .cc-serif { font-family: "Source Serif 4", Georgia, serif; fill: #15161a; font-size: 16px; font-weight: 600; }
+    .cc-sans { font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; fill: #454a55; font-size: 13.5px; }
+    .cc-edge { font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; font-size: 12.5px; font-weight: 600; }
+  </style>
+  <defs>
+    <marker id="cc-a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#15161a"/></marker>
+    <marker id="cc-r" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#a23d16"/></marker>
+    <marker id="cc-g" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#0f6e63"/></marker>
+  </defs>
+  <rect width="1000" height="184" fill="#ffffff"/>
+
+  <rect x="16" y="60" width="180" height="64" fill="#ffffff" stroke="#15161a"/>
+  <text class="cc-serif" x="30" y="86">Definition</text>
+  <text class="cc-sans" x="30" y="108">in a participating library</text>
+
+  <rect x="236" y="60" width="180" height="64" fill="#ffffff" stroke="#15161a"/>
+  <text class="cc-serif" x="250" y="86">1 Locate</text>
+  <text class="cc-sans" x="250" y="108">pair with its reference</text>
+
+  <rect x="456" y="60" width="180" height="64" fill="#ffffff" stroke="#15161a"/>
+  <text class="cc-serif" x="470" y="86">2 Refute</text>
+  <text class="cc-sans" x="470" y="108">SAT/SMT on small instances</text>
+
+  <rect x="706" y="10" width="278" height="60" fill="#fbeee7" stroke="#a23d16"/>
+  <text class="cc-serif" x="720" y="35">Divergence report</text>
+  <text class="cc-sans" x="720" y="56">with the counterexample input</text>
+
+  <rect x="706" y="114" width="122" height="60" fill="#ffffff" stroke="#15161a"/>
+  <text class="cc-serif" x="720" y="139">3 Confirm</text>
+  <text class="cc-sans" x="720" y="160">prove in Lean</text>
+
+  <rect x="848" y="114" width="136" height="60" fill="#e7f0ee" stroke="#0f6e63"/>
+  <text class="cc-serif" x="862" y="139">Bridge lemma</text>
+  <text class="cc-sans" x="862" y="160">pull request</text>
+
+  <g fill="none" stroke-width="1.5">
+    <path d="M196 92 L232 92" stroke="#15161a" marker-end="url(#cc-a)"/>
+    <path d="M416 92 L452 92" stroke="#15161a" marker-end="url(#cc-a)"/>
+    <path d="M636 80 C670 80 670 40 702 40" stroke="#a23d16" marker-end="url(#cc-r)"/>
+    <path d="M636 104 C670 104 670 144 702 144" stroke="#15161a" marker-end="url(#cc-a)"/>
+    <path d="M828 144 L844 144" stroke="#0f6e63" marker-end="url(#cc-g)"/>
+  </g>
+  <text class="cc-edge" x="546" y="50" fill="#a23d16">counterexample</text>
+  <text class="cc-edge" x="570" y="144" fill="#454a55">none found</text>
+</svg>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Analytics (optional): paste your own tag here. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tools | Flywheel</title>
+  <meta name="description" content="Flywheel is an open-source toolchain that helps formal libraries of mathematics and theoretical computer science in Lean agree with each other.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tools | Flywheel">
+  <meta property="og:description" content="Flywheel is an open-source toolchain that helps formal libraries of mathematics and theoretical computer science in Lean agree with each other.">
+  <meta property="og:image" content="https://example.github.io/flywheel/static/logo.svg"><!-- TBD: real URL; social previews need a PNG -->
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=41f234de">
+  <noscript><style>.reveal{opacity:1;transform:none}.steps .ctl{display:none}</style></noscript>
+</head>
+<body>
+
+<!-- Shared header: keep identical across pages. -->
+<div class="site-header">
+  <div class="wide">
+    <a class="mark" href="index.html"><img src="static/logo.svg" alt="" width="26" height="26">Flywheel</a>
+    <nav class="site-nav" aria-label="Site"><a href="about.html">About</a> <a href="tools.html" aria-current="page">Tools</a> <a href="roadmap.html">Roadmap</a> <a href="partners.html">Partners</a> <a href="governance.html">Governance</a> <a href="contributing.html">Get Involved</a> <a href="resources.html">News &amp; Resources</a> <a class="gh" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></nav>
+  </div>
+</div>
+
+<header class="page-head">
+  <div class="wrap">
+    <h1>Tools</h1>
+    <p class="lead">Five tools share a single index of declarations drawn from all participating libraries.</p>
+  </div>
+</header>
+<section>
+  <div class="wrap">
+    <div class="tool" id="search"><h3><span class="n">1</span> Semantic search</h3>
+      <p>Finds definitions and theorems across libraries by content. Unlike existing Lean search engines, it indexes several libraries together, and a match is reported as equivalent only after an agent has proved the equivalence in Lean.</p></div>
+    <div class="tool" id="canonicity"><h3><span class="n">2</span> Canonicity checking</h3>
+      <p>Compares a definition with an agreed reference, taken from Mathlib or CSLib where one exists and otherwise proposed by domain experts.</p></div>
+  </div>
+  <div class="wide">
+    <figure class="fig fig-narrow">
+      <div class="fig-scroll"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" role="img" aria-label="A definition is located against its reference, then tested on small instances with a SAT/SMT solver. A counterexample produces a divergence report. Otherwise the equivalence is proved in Lean, producing a bridge lemma." class="fig-svg"><defs><marker id="canonicity-tip" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.2" markerHeight="5.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#1A1A1A"/></marker><marker id="canonicity-tiphl" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#0F6E63"/></marker></defs>
+<rect width="1000" height="200" fill="#FFFFFF"/>
+<g transform="translate(32.2,74.7) scale(1.1)">
+<path d="M1,1 H26 L35,10 V45 H1 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26,1 V10 H35" fill="none" stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="4" y="4" width="13" height="8" rx="1" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.0" />
+<text x="10.5" y="10.6" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="6.5" text-anchor="middle" fill="#1A1A1A" >&lt;/&gt;</text>
+<text x="18" y="22" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="9.5" text-anchor="middle" fill="#B0221B" >thm</text>
+<path d="M8,24.5 H28" fill="none" stroke="#B0221B" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="18" y="33" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="9.5" text-anchor="middle" fill="#1F5FBF" >proof</text>
+<path d="M5,35.5 H31" fill="none" stroke="#1F5FBF" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="7.0" y="39" width="32.0" height="10" rx="2.5" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<text x="23.0" y="46.8" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="8.5" text-anchor="middle" fill="#FFFFFF" >.lean</text>
+</g>
+<text x="52" y="146" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12.5" text-anchor="middle" fill="#1A1A1A" >definition</text>
+<polygon points="82,90.76 112,90.76 112,85.0 128,100 112,115.0 112,109.24 82,109.24" fill="#A6A6A6"/>
+<rect x="132" y="78" width="176" height="44" rx="6" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="1.1" />
+<text x="140" y="94" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.5" text-anchor="start" fill="#1A1A1A" >1. Locate</text>
+<text x="140" y="109" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >pair with its reference</text>
+<polygon points="312,90.76 342,90.76 342,85.0 358,100 342,115.0 342,109.24 312,109.24" fill="#A6A6A6"/>
+<rect x="362" y="78" width="196" height="44" rx="6" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="1.1" />
+<text x="370" y="94" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.5" text-anchor="start" fill="#1A1A1A" >2. Refute</text>
+<text x="370" y="109" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >SAT/SMT on small instances</text>
+<path d="M558,90 C584,90 584,48 606,48" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#canonicity-tip)"/>
+<circle cx="620" cy="48" r="11" fill="#D64541"/>
+<path d="M615.82,43.82 L624.18,52.18 M615.82,52.18 L624.18,43.82" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+<text x="642" y="45" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >Counterexample</text>
+<text x="642" y="61" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >divergence report to maintainers</text>
+<path d="M558,110 C584,110 584,152 606,152" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#canonicity-tip)"/>
+<circle cx="620" cy="152" r="11" fill="#3DA35D"/>
+<path d="M615.05,152.22 L618.9,156.18 L625.5,147.82" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M634,152 H666" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#canonicity-tip)"/>
+<rect x="670" y="130" width="150" height="44" rx="6" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="1.1" />
+<text x="678" y="146" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.5" text-anchor="start" fill="#1A1A1A" >3. Confirm</text>
+<text x="678" y="161" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="12" text-anchor="start" fill="#3A3A3A" >prove in Lean</text>
+<path d="M820,152 H860" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#canonicity-tip)"/>
+<g transform="translate(870.2,124.7) scale(1.1)">
+<path d="M1,1 H26 L35,10 V45 H1 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26,1 V10 H35" fill="none" stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="4" y="4" width="13" height="8" rx="1" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.0" />
+<text x="10.5" y="10.6" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="6.5" text-anchor="middle" fill="#1A1A1A" >&lt;/&gt;</text>
+<text x="18" y="22" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="9.5" text-anchor="middle" fill="#B0221B" >thm</text>
+<path d="M8,24.5 H28" fill="none" stroke="#B0221B" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="18" y="33" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="9.5" text-anchor="middle" fill="#1F5FBF" >proof</text>
+<path d="M5,35.5 H31" fill="none" stroke="#1F5FBF" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="7.0" y="39" width="32.0" height="10" rx="2.5" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<text x="23.0" y="46.8" font-family="'Source Code Pro', Menlo, monospace" font-weight="600" font-size="8.5" text-anchor="middle" fill="#FFFFFF" >.lean</text>
+<path d="M28,-2 L25,8 L29,6 L31,10 L33,0 Z" fill="#C0392B" stroke="#7A1F17" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M34,-2 L37,8 L33,6 L31,10 L29,0 Z" fill="#C0392B" stroke="#7A1F17" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="31" cy="-5" r="6" fill="#F2C230" stroke="#9C7413" stroke-width="0.9"/>
+<path d="M31,-8.6 L32.1,-6.1 L34.6,-5.8 L32.7,-4.1 L33.2,-1.5 L31,-2.8 L28.8,-1.5 L29.3,-4.1 L27.4,-5.8 L29.9,-6.1 Z" fill="#FFF3B0" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<text x="918" y="148" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >Bridge</text>
+<text x="918" y="164" font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="start" fill="#1A1A1A" >lemma</text>
+</svg></div>
+      <figcaption><b>A canonicity check.</b> Counterexamples are sought on small instances before any proof is attempted, since an incorrect definition is cheaper to refute than to prove.</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <div class="tool" id="harmonization"><h3><span class="n">3</span> Harmonization</h3>
+      <p>Synthesizes bridge lemmas between equivalent definitions, stating any overhead such as a quadratic simulation. Bridges are proposed to both libraries as pull requests.</p></div>
+    <div class="tool" id="quality"><h3><span class="n">4</span> Proof quality</h3>
+      <p>Scores proofs for robustness to upstream changes, generality, size and build time, and reuse, and suggests specific improvements.</p></div>
+    <div class="tool" id="faithfulness"><h3><span class="n">5</span> Faithfulness checking</h3>
+      <p>Tests whether an informal statement was formalized correctly, combining back-translation, independent AI judges, and canonicity checks. It builds on <a href="https://arxiv.org/abs/2610.05367" target="_blank" rel="noopener">AIProver</a>.</p></div>
+  </div>
+</section>
+
+<!-- Shared footer: keep identical across pages. -->
+<footer class="site-footer">
+  <div class="wide">
+    <div class="cols">
+      <div class="about"><h4>Flywheel</h4><p>Open-source tools for harmonizing formal libraries of mathematics and theoretical computer science in Lean.</p></div>
+      <div><h4>Initiative</h4><ul><li><a href="about.html">About</a></li><li><a href="tools.html">Tools</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="partners.html">Partners</a></li><li><a href="governance.html">Governance</a></li></ul></div>
+      <div><h4>Build</h4><ul><li><a href="#">Code</a></li><li><a href="#">Documentation</a></li><li><a href="contributing.html">Get Involved</a></li><li><a href="#">Zulip</a></li></ul></div>
+      <div><h4>Lean ecosystem</h4><ul><li><a href="https://lean-lang.org/">Lean</a></li><li><a href="https://leanprover-community.github.io/">Mathlib</a></li><li><a href="https://www.cslib.io/">CSLib</a></li><li><a href="https://reservoir.lean-lang.org/">Reservoir</a></li></ul></div>
+      <div><h4>Policies</h4><ul><li><a href="#">Code of Conduct</a></li><li><a href="#">License</a></li></ul></div>
+    </div>
+    <div class="legal">&copy; 2026 Flywheel contributors</div>
+  </div>
+</footer>
+
+<div id="tip" role="tooltip" aria-hidden="true"></div>
+<script src="app.js?v=2a6e9ba6" defer></script>
+</body>
+</html>
